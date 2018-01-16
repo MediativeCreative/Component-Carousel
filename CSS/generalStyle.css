@@ -1,0 +1,9 @@
+	.zone{
+		width: 86% !important;
+	}
+	@media screen and (max-width : 640px) {
+		.zone{
+			width: 100% !important;
+		}
+	}
+

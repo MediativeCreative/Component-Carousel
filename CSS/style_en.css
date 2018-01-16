@@ -1,0 +1,32 @@
+<style type="text/css">
+	.md_features{
+		position: relative;
+		width: 100%;
+	}
+	.md_aboutChatr{
+		position: relative;
+		width: 100%;
+   		margin-top: 25px;
+   		margin-bottom: 20px;
+   		background-color: #f6f6f6;
+   		padding: 45px;
+	}
+
+	.md_aboutTitle{
+		position: relative;
+		text-align: left;
+		font-size: 15px;
+		color: #1267a4;
+		line-height: 20px;
+		font-weight: bold;
+		margin-bottom: 12px;
+	}
+	.md_aboutCopy{
+		line-height: 1.8rem;
+		font-size: 12px;
+	}
+
+</style>
+
+
+
