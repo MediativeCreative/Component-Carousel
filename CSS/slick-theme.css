@@ -13,7 +13,11 @@
     {
     
     }
-
+    .slider{
+        height: 1px;
+        visibility: hidden;
+        transition: height 0.2s linear;
+    }
 
     /* Arrows */
     .slick-prev,
@@ -330,7 +334,12 @@
     }
     .slick-loading .slick-slide
     {
+        /*visibility: hidden;*/
+        height: 1px;
+        overflow: hidden;
         visibility: hidden;
+        transition: height 0.2s linear;
+
     }
     .slick-vertical .slick-slide
     {
@@ -361,6 +370,7 @@
     .slick-current {
       /*opacity: 1;*/
     }
+
 
 </style>
 

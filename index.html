@@ -76,7 +76,14 @@
 
   <script type="text/javascript">
 
+
     $(document).on('ready', function() {
+	  	$('.slider').on('init', function () {
+		  $('.slider').css({
+		    height: 'auto',
+		    visibility: 'visible'
+		  });
+		});
 
       $('.lazy').slick({
 		  dots: true,
