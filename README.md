@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## Component Carousel page
 
-You can use the [editor on GitHub](https://github.com/MediativeCreative/Component-Carousel/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+See the preview component [here](https://mediativecreative.github.io/Component-Carousel/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Code to edit
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+First you need to your javascript and CSS to make this component work.
+Place this in the cartridge you want to create your carousel
+```html
+<script src="http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/JS/slick.js" type="text/javascript" charset="utf-8">
+</script>
+<link rel="stylesheet" type="text/css" href="http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/CSS/slick-theme.css">
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+You can copy paste this HTML section
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MediativeCreative/Component-Carousel/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```html
+  <section class="lazy slider" data-sizes="100vw"">
+    <div>
+	<!--Type your code here-->
+    </div>
+    <div>
+	<!--Type your code here-->
+    </div>
+    ...
+  </section>
+```
+You can have as many `div` as you want. Each `div` will an item in you carousel.
