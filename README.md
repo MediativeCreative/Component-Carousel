@@ -4,6 +4,14 @@ See the preview component [here](https://mediativecreative.github.io/Component-C
 
 ### Code to edit
 
+First you need to your javascript and CSS to make this component work.
+Place this in the cartridge you want to create your carousel
+```html
+<script src="http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/JS/slick.js" type="text/javascript" charset="utf-8">
+</script>
+<link rel="stylesheet" type="text/css" href="http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/CSS/slick-theme.css">
+```
+
 You can copy paste this HTML section
 
 ```html
