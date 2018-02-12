@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tran",
+				"transform"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
 				"margi",
 				"margin-bottom"
 			],
@@ -160,20 +168,12 @@
 				"style\tTag"
 			],
 			[
-				"tra",
-				"translateY()"
-			],
-			[
 				"ba",
 				"background-color"
 			],
 			[
 				"border-",
 				"border-top"
-			],
-			[
-				"tran",
-				"translateY()"
 			],
 			[
 				"clo",
@@ -279,15 +279,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/sarnoul1/Documents/GWD/160x600_DynamicTest/160x600_DynamicTest/feeds/studio_dynamic_remarketing.json",
-			"settings":
-			{
-				"buffer_size": 3635,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -326,12 +317,17 @@
 	"expanded_folders":
 	[
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel",
-		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/CSS"
+		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/CSS",
+		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/JS"
 	],
 	"file_history":
 	[
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/index.html",
+		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/JS/slick.js",
+		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Multi-tab-carousel/dynamicAriaLabel-flex.html",
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/CSS/slick-theme.css",
+		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Carousel/CSS/style_en.css",
+		"/Users/sarnoul1/Documents/GWD/160x600_DynamicTest/160x600_DynamicTest/feeds/studio_dynamic_remarketing.json",
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Multi-Column-Cartridge/CSS/generalStyle.css",
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Multi-Column-Cartridge/index.html",
 		"/Users/sarnoul1/Documents/CODE/GitHub/Component-Multi-Column-Cartridge/CSS/style_en.css",
@@ -453,11 +449,7 @@
 		"/Users/sarnoul1/Box Sync/YPscanTool/YP_728x90_FR/YP_728x90_FR.html",
 		"/Users/sarnoul1/Documents/DIVERS/Code_Environment/code/CSS/style_en.css",
 		"/Users/sarnoul1/Documents/DIVERS/Code_Environment/code/chatr_main_code_EN.html",
-		"/Users/sarnoul1/Documents/DIVERS/Code_Environment/code/Caroussel_EN.html",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/Caroussel_FR.html",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/chatr_main_code_FR.html",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Maple Leaf Foods/13899 - Schneiders Oven Roasted Turkey Demo Amplification/Production/03_Integration/storeLocations_EN.xml",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/CSS/generalStyle.css"
+		"/Users/sarnoul1/Documents/DIVERS/Code_Environment/code/Caroussel_EN.html"
 	],
 	"find":
 	{
@@ -475,6 +467,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"draggable",
+			".slick-list",
+			"slick-prev",
+			"prevArrow",
+			"left-arrow",
+			"top-arrow",
 			"slick-initialized"
 		],
 		"highlight": true,
@@ -493,37 +491,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/sarnoul1/Documents/GWD/160x600_DynamicTest/160x600_DynamicTest/feeds/studio_dynamic_remarketing.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3635,
-								3635
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 24544.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

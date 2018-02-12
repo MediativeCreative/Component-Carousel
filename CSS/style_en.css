@@ -43,7 +43,37 @@
 	  top: 0;
 	  left: 0;
 	}
+	.videoSlideWraper{
+	  position: relative;
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-flex-flow: row;
+	  -moz-flex-flow: row;
+	  -ms-flex-flow: row;
+	  -o-flex-flow: row;
+	  justify-content: space-between;
+	}
+	.videoSlideWraper :nth-child(2n){
+	  margin-right:0;
+	}
 
+	.slider-for{
+	  width: 80%;
+	  position: relative;
+	  background-color: #f6f6f6;
+	  margin-bottom: 10px;
+	  /*margin-right: 1%;*/
+	}
+	.slider-nav{
+	  width: 20%;
+	  position: relative;
+	  background-color: #f6f6f6;
+	  margin-bottom: 10px;
+	  /*margin-right: 1%;*/
+	}
 </style>
 
 

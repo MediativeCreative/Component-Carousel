@@ -80,7 +80,7 @@
         content: "";
         width: 1.5rem;
         height: 2.2rem;
-        background: url(http://mediative.co/creativeservices/WM_CodeLibrary/images/wm-global-sprite.png) no-repeat;
+        background: url(http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/images/wm-global-sprite.png) no-repeat;
         display: block;
         position: absolute;
         top: 11px;
@@ -206,16 +206,17 @@
         content: '';
         text-align: center;
 
-        opacity: .25;
+        opacity: 1;
         color: black;
         background: url(https://www.walmart.ca/assets/img/d925f4eb36fea4a05652eec0da622072-global-sprite.png) no-repeat;
 
-        background-position: -403px -62px;
+        background-position: -444px -62px;
 
     }
     .slick-dots li.slick-active button:before
     {
-        opacity: .75;
+        opacity: 1;
+        background-position: -403px -62px;
         color: black;
     }
 
@@ -365,7 +366,54 @@
     .slick-current {
       /*opacity: 1;*/
     }
-
+    .top-arrow{
+        top: 2%;
+        left: 50%; 
+        margin: auto;
+        position: absolute;
+        width: 2.5rem;
+        height: 4rem;
+        z-index: 9999;
+        cursor: pointer;
+        outline: 0;
+        border: 1px solid #e8e8df;
+        background-color: #cdc7c0;
+        background-color: rgba(182,174,164,0.9);
+        -webkit-border-radius: .1rem;
+        -moz-border-radius: .1rem;
+        -ms-border-radius: .1rem;
+        -o-border-radius: .1rem;
+        border-radius: .1rem;
+        text-align: left;
+        text-indent: -9999px;
+        text-decoration: none;
+        overflow: hidden;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    .bottom-arrow{
+        bottom: 2%;
+        left: 50%; 
+        margin: auto;
+        position: absolute;
+        width: 2.5rem;
+        height: 4rem;
+        z-index: 9999;
+        cursor: pointer;
+        outline: 0;
+        border: 1px solid #e8e8df;
+        background-color: #cdc7c0;
+        background-color: rgba(182,174,164,0.9);
+        -webkit-border-radius: .1rem;
+        -moz-border-radius: .1rem;
+        -ms-border-radius: .1rem;
+        -o-border-radius: .1rem;
+        border-radius: .1rem;
+        text-align: left;
+        text-indent: -9999px;
+        text-decoration: none;
+        overflow: hidden;
+        transform: translateX(-50%) rotate(90deg);
+    }
 
 </style>
 
