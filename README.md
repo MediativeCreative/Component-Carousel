@@ -1,6 +1,6 @@
 ## Component Carousel page
 
-See the preview component [here](https://mediativecreative.github.io/Component-Carousel/)
+**See the preview component [here](https://mediativecreative.github.io/Component-Carousel/)**
 
 ### Code to edit
 
