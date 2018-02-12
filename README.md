@@ -1,14 +1,12 @@
-## Welcome to GitHub Pages
+## Component Carousel page
 
-You can use the [editor on GitHub](https://github.com/MediativeCreative/Component-Carousel/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+See the preview component [here](https://mediativecreative.github.io/Component-Carousel/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Code to edit
 
-### Markdown
+You can copy paste this HTML section
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
+```HTML
 Syntax highlighted code block
 
 # Header 1
