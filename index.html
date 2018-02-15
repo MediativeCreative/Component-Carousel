@@ -9,6 +9,15 @@
 
 <link rel="stylesheet" type="text/css" href="CSS/style_en.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="CSS/generalStyle.css" media="screen" />
+<style>
+    .brandStyle .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    .brandStyle .slick-current {
+      opacity: 1;
+    }
+</style> 
 
 <div id="wrap">
 	<div id="main-wrap">
@@ -17,7 +26,7 @@
 
 <!-- *********************************************************** -->
 
-			  <section class="lazy slider" data-sizes="100vw"">
+			  <section class="productStyle slider" data-sizes="100vw"">
 			    <div>
 			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
 					<div class="md_aboutChatr">
@@ -62,6 +71,31 @@
 			    </div>
 			  </section>
 
+<!-- *********************************************************** -->
+
+			  <section class="brandStyle slider" data-sizes="100vw"">
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			    <div>
+			    	<img src="http://i.walmartimages.ca/img/mediative/creative-shop/spinrite/bernat-baby-update/double-scoop-snuggle-snack.jpg">
+			    </div>
+			  </section>
+
+<!-- *********************************************************** -->
+
 			</div>
 		</div>	
 	</div>
@@ -81,7 +115,7 @@
 
 // Responsive Display -------------------------------------
 
-		$('.lazy').slick({
+		$('.productStyle').slick({
 		  dots: true,
 		  infinite: false,
 		  speed: 500,
@@ -113,6 +147,37 @@
 		    }
 		  ],
 		});
+
+// Responsive Display -------------------------------------
+
+		$('.brandStyle').slick({
+		  centerMode: true,
+		  centerPadding: '60px',
+		  slidesToShow: 5,
+		  responsive: [
+		    {
+		      breakpoint: 1000,
+		      settings: {
+		        arrows: true,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 3,
+		        height: '100px'
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: true,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
+
     });
 
 </script>
+
