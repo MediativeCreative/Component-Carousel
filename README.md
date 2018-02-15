@@ -26,3 +26,17 @@ You can copy paste this HTML section
   </section>
 ```
 You can have as many `div` as you want. Each `div` will an item in you carousel.
+
+Then just put the `Javascript` code at the bottom of your cartridge
+```javascript
+<script>
+	$(document).on('ready', function() {
+		$('.slider').on('init', function () {
+			$('.slider').css({
+				height: 'auto',
+				visibility: 'visible'
+			});
+		});
+	});
+</script>
+```
