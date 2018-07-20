@@ -1,81 +1,61 @@
 <style type="text/css">
-	.md_features{
-		position: relative;
-		width: 100%;
-	}
-	.md_aboutChatr{
-		position: relative;
-		width: 100%;
-   		margin-top: 25px;
-   		margin-bottom: 20px;
-   		background-color: #f6f6f6;
-   		padding: 45px;
-	}
 
-	.md_aboutTitle{
-		position: relative;
-		text-align: left;
-		font-size: 15px;
-		color: #1267a4;
-		line-height: 20px;
-		font-weight: bold;
-		margin-bottom: 12px;
-	}
-	.md_aboutCopy{
-		line-height: 1.8rem;
-		font-size: 12px;
-	}
-	.slider{
-		margin-top: 40px;
-		margin-bottom: 10px;
-	}
-	.youtube{
-	  position: relative;
-	  width: 100%;
-	  height: 0;
-	  padding-bottom: 10.92%;
-	}
+.md_itemTitle {
+	position: relative;
+	font-size: 16px;
+	color: #007cc2;
+	/*margin-top: 15px;*/
+	margin-bottom: 8px;
+}
 
-	.youtube iframe{
-	  position: absolute;
-	  width: 100%;
-	  height: 100%;
-	  top: 0;
-	  left: 0;
-	}
-	.videoSlideWraper{
-	  position: relative;
-	  display: -webkit-box;
-	  display: -moz-box;
-	  display: -ms-flexbox;
-	  display: -webkit-flex;
-	  display: flex;
-	  -webkit-flex-flow: row;
-	  -moz-flex-flow: row;
-	  -ms-flex-flow: row;
-	  -o-flex-flow: row;
-	  justify-content: space-between;
-	}
-	.videoSlideWraper :nth-child(2n){
-	  margin-right:0;
-	}
+.itemButton {
+	position: absolute !important;
+	bottom: 0;
+	left: 0;
+	border: none !important;
+	background-color: #e35205 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e35205), to(#e35205)) !important;
+	width: 100%;
+}
 
-	.slider-for{
-	  width: 80%;
-	  position: relative;
-	  background-color: #f6f6f6;
-	  margin-bottom: 10px;
-	  /*margin-right: 1%;*/
-	}
-	.slider-nav{
-	  width: 20%;
-	  position: relative;
-	  background-color: #f6f6f6;
-	  margin-bottom: 10px;
-	  /*margin-right: 1%;*/
-	}
+.itemButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#a53b03), to(#a53b03)) !important;
+}
 
+.itemPic{
+	position: relative;
+	width: auto !important;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.md_itemCopy {
+	position: relative;
+	width: 100%;
+	margin-top: 14px;
+	margin-bottom: 40px;
+}
+
+.md_itemCopy li {
+	padding-left: 1.5rem; 
+	margin-bottom: 10px;
+}
+
+.md_itemCopy li::before {
+	position: absolute;
+	content: "• ";
+	color: #000;
+	font-size: 25px;
+	left: 0px;
+}
+
+.slideCol{
+	position: relative;
+	width: 100%;
+}
+
+.productStyle{
+	margin-bottom: 50px !important;
+}
 </style>
-
-
-

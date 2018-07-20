@@ -1,256 +1,256 @@
 <style type="text/css">
 
+@charset 'UTF-8';
 
-    @charset 'UTF-8';
+.slick-loading .slick-list
+{
+    /*background: #fff url('./_assets/ajax-loader.gif') center center no-repeat;*/
+}
 
-    .slick-loading .slick-list
-    {
-        /*background: #fff url('./_assets/ajax-loader.gif') center center no-repeat;*/
-    }
+.slider{
+    height: 1px;
+    visibility: hidden;
+    transition: height 0.2s linear;
+}
 
-    .slider{
-        height: 1px;
-        visibility: hidden;
-        transition: height 0.2s linear;
-    }
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 30%;
+    margin-top: -16px;
+    width: 2.5rem;
+    height: 4rem;
+    z-index: 9999;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid #e8e8df;
+    background-color: #cdc7c0;
+    background-color: rgba(182,174,164,0.9);
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    border-radius: .1rem;
+    text-align: left;
+    text-indent: -9999px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    background-color: #ada49a;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
 
-    /* Arrows */
-    .slick-prev,
-    .slick-next
-    {
-        position: absolute;
-        top: 50%;
-        margin-top: -16px;
-        width: 2.5rem;
-        height: 4rem;
-        z-index: 9999;
-        cursor: pointer;
-        outline: 0;
-        border: 1px solid #e8e8df;
-        background-color: #cdc7c0;
-        background-color: rgba(182,174,164,0.9);
-        -webkit-border-radius: .1rem;
-        -moz-border-radius: .1rem;
-        -ms-border-radius: .1rem;
-        -o-border-radius: .1rem;
-        border-radius: .1rem;
-        text-align: left;
-        text-indent: -9999px;
-        text-decoration: none;
-        overflow: hidden;
-    }
-    .slick-prev:hover,
-    .slick-prev:focus,
-    .slick-next:hover,
-    .slick-next:focus
-    {
-        background-color: #ada49a;
-    }
-    .slick-prev:hover:before,
-    .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before
-    {
-        opacity: 1;
-    }
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
+{
+    background-color: #fff;
+    cursor: default;
+    -moz-opacity: .7;
+    -webkit-opacity: .7;
+    opacity: .7;
+}
 
-    .slick-prev.slick-disabled,
-    .slick-next.slick-disabled
-    {
-        background-color: #fff;
-        cursor: default;
-        -moz-opacity: .7;
-        -webkit-opacity: .7;
-        opacity: .7;
-    }
-
-    .slick-prev.slick-disabled:before
-    {
-        background-position: -708px -12px;
-    }
-    .slick-next.slick-disabled:before
-    {
-        background-position: -708px -55px;
-    }
-
-
-    .slick-prev:before,
-    .slick-next:before
-    {
-        content: "";
-        width: 1.5rem;
-        height: 2.2rem;
-        background: url(http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/images/wm-global-sprite.png) no-repeat;
-        display: block;
-        position: absolute;
-        top: 11px;
-    }
-
-    .slick-prev
-    {
-        left: 5px;
-        z-index: 100;
-    }
-    [dir='rtl'] .slick-prev
-    {
-        right: -25px;
-        left: auto;
-    }
-    .slick-prev:before
-    {
-        /*content: '←';*/
-        background-position: -735px -12px;
-    }
-    [dir='rtl'] .slick-prev:before
-    {
-        /*content: '→';*/
-        background-position: -737px -55px;
-    }
-
-    .slick-next
-    {
-        right: 5px;
-        z-index: 100;
-    }
-    [dir='rtl'] .slick-next
-    {
-        right: auto;
-        left: -25px;
-    }
-    .slick-next:before
-    {
-        /*content: '→';*/
-        background-position: -737px -55px;
-    }
-    [dir='rtl'] .slick-next:before
-    {
-        /*content: '←';*/
-        background-position: -735px -12px;
-    }
-
-    /* Dots */
-    .slick-dotted.slick-slider
-    {
-        margin-bottom: 30px;
-    }
-
-    .slick-dots
-    {
-        position: absolute;
-        bottom: -25px;
-
-        display: block;
-
-        width: 100%;
-        padding: 0;
-        margin: 0;
-
-        list-style: none;
-
-        text-align: center;
-    }
-    .slick-dots li
-    {
-        position: relative;
-
-        display: inline-block;
-
-        width: 20px;
-        height: 20px;
-        margin: 0 5px;
-        padding: 0;
-
-        cursor: pointer;
-    }
-    .slick-dots li button
-    {
-        font-size: 0;
-        line-height: 0;
-
-        display: block;
-
-        width: 20px;
-        height: 20px;
-        padding: 5px;
-
-        cursor: pointer;
-
-        color: transparent;
-        border: 0;
-        outline: none;
-        background: transparent;
-    }
-    .slick-dots li button:hover,
-    .slick-dots li button:focus
-    {
-        outline: none;
-    }
-    .slick-dots li button:hover:before,
-    .slick-dots li button:focus:before
-    {
-        opacity: 1;
-    }
-    .slick-dots li button:before
-    {
-        /*font-family: 'slick';*/
-        font-size: 6px;
-        line-height: 20px;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 20px;
-        height: 20px;
-
-        content: '';
-        text-align: center;
-
-        opacity: 1;
-        color: black;
-        background: url(http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/images/wm-global-sprite.png) no-repeat;
-
-        background-position: -444px -62px;
-
-    }
-    .slick-dots li.slick-active button:before
-    {
-        opacity: 1;
-        background-position: -403px -62px;
-        color: black;
-    }
+.slick-prev.slick-disabled:before
+{
+    background-position: -708px -12px;
+}
+.slick-next.slick-disabled:before
+{
+    background-position: -708px -55px;
+}
 
 
+.slick-prev:before,
+.slick-next:before
+{
+    content: "";
+    width: 1.5rem;
+    height: 2.2rem;
+    background: url(http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/images/wm-global-sprite.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 11px;
+}
 
-    /* Slider */
-    .slick-slider
-    {
-        position: relative;
+.slick-prev
+{
+    left: 5px;
+    z-index: 100;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    /*content: '←';*/
+    background-position: -735px -12px;
+}
+[dir='rtl'] .slick-prev:before
+{
+    /*content: '→';*/
+    background-position: -737px -55px;
+}
 
-        display: block;
-        box-sizing: border-box;
+.slick-next
+{
+    right: 5px;
+    z-index: 100;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    /*content: '→';*/
+    background-position: -737px -55px;
+}
+[dir='rtl'] .slick-next:before
+{
+    /*content: '←';*/
+    background-position: -735px -12px;
+}
 
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
 
-        -webkit-touch-callout: none;
-        -khtml-user-select: none;
-        -ms-touch-action: pan-y;
-            touch-action: pan-y;
-        -webkit-tap-highlight-color: transparent;
-    }
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
 
-    .slick-list
-    {
-        position: relative;
+    display: block;
 
-        display: block;
-        overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
-        margin: 0;
-        padding: 0;
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    /*font-family: 'slick';*/
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '';
+    text-align: center;
+
+    opacity: 1;
+    color: black;
+    background: url(http://mediative.co/creativeservices/WM_CodeLibrary/component-carousel/images/wm-global-sprite.png) no-repeat;
+
+    background-position: -444px -62px;
+
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    background-position: -403px -62px;
+    color: black;
+}
+
+
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
         /*width: 80%;
         margin: 0 50%;*/
     }
@@ -268,10 +268,11 @@
     .slick-slider .slick-list
     {
         -webkit-transform: translate3d(0, 0, 0);
-           -moz-transform: translate3d(0, 0, 0);
-            -ms-transform: translate3d(0, 0, 0);
-             -o-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+
     }
 
     .slick-track
@@ -280,7 +281,7 @@
         top: 0;
         left: 0;
 
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
     }
@@ -302,7 +303,8 @@
 
     .slick-slide
     {
-        display: none;
+        display: flex;
+        height: auto;
         float: left;
         /*height: 100%;*/
         min-height: 1px;
@@ -356,64 +358,64 @@
 
     .slick-slide img {
       width: 100%;
-    }
+  }
 
-    .slick-slide {
+  .slick-slide {
       transition: all ease-in-out .3s;
       /*opacity: .2;*/
-    }
+  }
 
-    .slick-current {
+  .slick-current {
       /*opacity: 1;*/
-    }
-    .top-arrow{
-        top: 2%;
-        left: 50%; 
-        margin: auto;
-        position: absolute;
-        width: 2.5rem;
-        height: 4rem;
-        z-index: 9999;
-        cursor: pointer;
-        outline: 0;
-        border: 1px solid #e8e8df;
-        background-color: #cdc7c0;
-        background-color: rgba(182,174,164,0.9);
-        -webkit-border-radius: .1rem;
-        -moz-border-radius: .1rem;
-        -ms-border-radius: .1rem;
-        -o-border-radius: .1rem;
-        border-radius: .1rem;
-        text-align: left;
-        text-indent: -9999px;
-        text-decoration: none;
-        overflow: hidden;
-        transform: translateX(-50%) rotate(90deg);
-    }
-    .bottom-arrow{
-        bottom: 2%;
-        left: 50%; 
-        margin: auto;
-        position: absolute;
-        width: 2.5rem;
-        height: 4rem;
-        z-index: 9999;
-        cursor: pointer;
-        outline: 0;
-        border: 1px solid #e8e8df;
-        background-color: #cdc7c0;
-        background-color: rgba(182,174,164,0.9);
-        -webkit-border-radius: .1rem;
-        -moz-border-radius: .1rem;
-        -ms-border-radius: .1rem;
-        -o-border-radius: .1rem;
-        border-radius: .1rem;
-        text-align: left;
-        text-indent: -9999px;
-        text-decoration: none;
-        overflow: hidden;
-        transform: translateX(-50%) rotate(90deg);
-    }
+  }
+  .top-arrow{
+    top: 2%;
+    left: 50%; 
+    margin: auto;
+    position: absolute;
+    width: 2.5rem;
+    height: 4rem;
+    z-index: 9999;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid #e8e8df;
+    background-color: #cdc7c0;
+    background-color: rgba(182,174,164,0.9);
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    border-radius: .1rem;
+    text-align: left;
+    text-indent: -9999px;
+    text-decoration: none;
+    overflow: hidden;
+    transform: translateX(-50%) rotate(90deg);
+}
+.bottom-arrow{
+    bottom: 2%;
+    left: 50%; 
+    margin: auto;
+    position: absolute;
+    width: 2.5rem;
+    height: 4rem;
+    z-index: 9999;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid #e8e8df;
+    background-color: #cdc7c0;
+    background-color: rgba(182,174,164,0.9);
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    border-radius: .1rem;
+    text-align: left;
+    text-indent: -9999px;
+    text-decoration: none;
+    overflow: hidden;
+    transform: translateX(-50%) rotate(90deg);
+}
 
 </style>
 
